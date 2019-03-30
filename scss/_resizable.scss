@@ -1,0 +1,80 @@
+/*
+    This file is used to style the cropper in the Image cropper App.
+    It has the main div and all the other divs for the resizer.
+*/
+// Main div for the cropper 
+.resizable {
+    z-index: 10;
+    background: transparent;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.resizable .resizers {
+    width: 100%;
+    height: 100%;
+    border: 1px dotted black;
+    box-sizing: border-box;
+}
+
+.resizable .resizers .resizer {
+    width: 10px;
+    height: 10px;
+    //border-radius: 50%;
+    /*magic to turn square into circle*/
+    background: black;
+    border: 1px solid black;
+    position: absolute;
+}
+
+// top-left box
+.resizable .resizers .resizer.top-left {
+    left: -5px;
+    top: -5px;
+    cursor: nwse-resize;
+    /*resizer cursor*/
+}
+
+// top-right box
+.resizable .resizers .resizer.top-right {
+    right: -5px;
+    top: -5px;
+    cursor: nesw-resize;
+}
+
+//bottom-left box
+.resizable .resizers .resizer.bottom-left {
+    left: -5px;
+    bottom: -5px;
+    cursor: nesw-resize;
+}
+
+//bottom-right box
+.resizable .resizers .resizer.bottom-right {
+    right: -5px;
+    bottom: -5px;
+    cursor: nwse-resize;
+}
+
+.resizable .resizers .vertical {
+    width: 50%;
+    height: 100%;
+    left: 25%;
+    background: transparent;
+    border-left: 1px dotted black;
+    border-right: 1px dotted black;
+    position: absolute;
+}
+
+.resizable .resizers .horizontal {
+    width: 100%;
+    height: 50%;
+    top: 25%;
+    background: transparent;
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+    position: absolute;
+}

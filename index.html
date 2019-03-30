@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Image to crop</title>
+</head>
+
+<body>
+
+    <div>
+            <button type="button" class="cropButton" id="cropButton">Crop</button>
+    </div>    
+    <div class="imageClass" id="image">
+        <img class="resize-image" alt="Image" id="crop_Img" />
+    </div>    
+    <div class='resizable'>
+        <div class='resizers'>
+            <div class='resizer top-left'></div>
+            <div class="vertical"></div>
+            <div class='resizer top-right'></div>
+            <div class='resizer bottom-left'></div>
+            <div class='resizer bottom-right'></div>
+            <div class="horizontal"></div>
+        </div>
+    </div>
+    <canvas id="finalCanvas" class="canvasClass"></canvas>
+    
+</body>
+
+</html>
